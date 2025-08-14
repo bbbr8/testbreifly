@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divvy Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="dashboard">
+    <section class="card" id="budget-card">
+      <header class="card-header">
+        <h2>Budget(s)</h2>
+        <button class="toggle" data-target="budget-list">&#8722;</button>
+      </header>
+      <ul id="budget-list" class="budgets">
+        <li class="budget">
+          <div class="budget-info">
+            <h3 class="title">Title: HR/IT Control</h3>
+            <div class="progress">
+              <span class="progress-bar" style="width:60%"></span>
+            </div>
+          </div>
+          <div class="budget-metrics">
+            <div class="metric"><span>Commitment</span><span class="value ok">&#10003;</span></div>
+            <div class="metric"><span>Spending</span><span class="value warn">!</span></div>
+            <div class="metric"><span>Forecast</span><span class="value empty">&ndash;</span></div>
+          </div>
+        </li>
+        <li class="budget">
+          <div class="budget-info">
+            <h3 class="title">Title: BI/PC Control</h3>
+            <div class="progress">
+              <span class="progress-bar" style="width:45%"></span>
+            </div>
+          </div>
+          <div class="budget-metrics">
+            <div class="metric"><span>Commitment</span><span class="value ok">&#10003;</span></div>
+            <div class="metric"><span>Spending</span><span class="value ok">&#10003;</span></div>
+            <div class="metric"><span>Forecast</span><span class="value warn">!</span></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card" id="format-card">
+      <header class="card-header">
+        <h2>Format(s)</h2>
+        <button class="toggle" data-target="format-list">+</button>
+      </header>
+      <ul id="format-list" class="budgets hidden">
+        <li class="budget">
+          <div class="budget-info">
+            <h3 class="title">Title: Budget Comparison</h3>
+            <div class="progress">
+              <span class="progress-bar" style="width:80%"></span>
+            </div>
+          </div>
+          <div class="budget-metrics">
+            <div class="metric"><span>Commitment</span><span class="value ok">&#10003;</span></div>
+            <div class="metric"><span>Spending</span><span class="value ok">&#10003;</span></div>
+            <div class="metric"><span>Forecast</span><span class="value ok">&#10003;</span></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
 
